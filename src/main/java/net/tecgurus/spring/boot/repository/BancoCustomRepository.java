@@ -18,9 +18,6 @@ public class BancoCustomRepository {
 	
 	public List<Banco> obtenerBancosSP(){
 		StoredProcedureQuery spq = entityManager.createStoredProcedureQuery("sp_obtener_bancos", Banco.class);
-		
 		return spq.getResultList();			
 	}
-	
-	
 }
